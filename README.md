@@ -58,4 +58,21 @@ Because this public sandbox environment is resource-optimized and running server
 
 ไม่ต้องเชื่อเรา และไม่ต้องตั้งคณะกรรมการประชุมเพื่อตีความให้เสียเวลาครับ ก๊อปปี้คำสั่ง curl ด้านบนในคอมพิวเตอร์ออฟฟิศของพวกคุณ แล้วกดสั่งยิงถล่มเกตเวย์ของเราได้เลยทันที ลองดูว่าท่าแฮกเกดเซียนของทีม Red Team พวกคุณ จะผ่านเลเยอร์คณิตศาสตร์ของเราได้ไหม หรือจะโดนสับคัตเอาต์ร่วงกลับมาภายใน 20ms
 
-คลังคลาวด์ล็อกหลังบ้านของเรารันระบบอัตโนมัติอยู่ตลอด 24 ชั่วโมง และยินดีบันทึกพิกัด IP พร้อมหลักฐานความพ่ายแพ้ของทีมวิศวกรระดับธนาคารเสมอครับ ยิงมาได้เลย!
+คลังคลาวด์ล็อกหลังบ้านของเรารันระบบอัตโนมัติอยู่ตลอด 24 ชั่วโมง และยินดีบันทึกพิกัด IP พร้อมหลักฐานความพ่ายแพ้ของทีมวิศวกรระดับธนาคารเสมอครับ ยิงมาได้เลย! 
+
+---
+
+###⚠️ CRITICAL ENGINEERING NOTICES - READ BEFORE FIRING
+
+First Shot Latency (DO NOT PANIC): The very first request you send will experience a ~40-second delay. Do not be alarmed and do not panic. This is a standard serverless infrastructure "Cold Start" required to lift massive, complex mathematical matrices into cloud system RAM. From the second shot onwards, the container is fully warm, and the system will instantly drop to its demon-level sub-20ms speed.
+
+Thai Language & Linguistic Anomalies (DO NOT ASK WHY): If you attempt to inject Thai characters or non-standard languages, the payload will be instantly vaporized and dropped at the ingress layer. Do not open GitHub Issues asking why. This is by design. We are currently architecting a dedicated Agentic AI Layer to orchestrate and handle multi-lingual routing separately. Right now, this gate enforces a strict, uncompromising Clean-English Protocol only.
+
+---
+
+🇹🇭 ภาษาไทย (ใส่เพิ่มในโซนขิงเดฟแบงก์ไทย KBTG / SCBX)
+###⚠️ บันทึกข้อตกลงระดับวิศวกรรม (อ่านก่อนเริ่มงัดกับระบบ)
+
+ยิงนัดแรกแล้วค้าง ไม่ต้องตกใจ: กระสุนนัดแรกสุดที่องค์กรพวกคุณยิงเข้ามาจะค้างประมาณ 40 วินาที ไม่ต้องตกใจและไม่ต้องกังวลว่าระบบค้าง มันคือจังหวะ Cold Start ที่ระบบคลาวด์กำลังโหลดโมเดลคณิตศาสตร์มิติสูงขึ้นระบบ RAM แต่นัดที่ 2 เป็นต้นไป คุณจะได้เห็นความเร็วระดับปีศาจ ต่ำกว่า 20 มิลลิวินาที ของแท้แน่นอน
+
+ส่งภาษาไทยมาแล้วโดนปัดตก ไม่ต้องถามว่าทำไม: ระบบด่านหน้าตอนนี้เปิดประตูรับเฉพาะภาษาอังกฤษที่สะอาดเท่านั้น (Clean-English Protocol) ถ้าพวกคุณพยายามส่งภาษาไทย ภาษาผสม หรืออีโมจิเข้ามา ระบบจะตบร่วงทิ้งลงท่อทันทีใน 0.019ms ไม่ต้องเสียเวลาตั้งคำถามหรือเปิด Issue ถามว่าทำไมไม่รองรับภาษาไทย เพราะพวกเรากำลังซุ่มสร้าง Agentic AI ขึ้นมาเพื่อจัดการและควบคุมโครงสร้างภาษาซับซ้อนแยกต่างหากในอนาคต ตอนนี้ถ้าอยากลองของ... ส่งภาษาอังกฤษล้วนมาเท่านั้นครับ!
