@@ -1,3 +1,45 @@
+# ⚡ Bangsaen AI: The 20ms Semantic Firewall Challenge
+
+An immutable, deterministic sub-20ms semantic security gateway engineered to replace traditional stochastic LLM guardrails (LlamaGuard, Nvidia NeMo, or heavy middleware proxies) which inflict a devastating 200ms to 1,250ms+ latency tax on production loops.
+
+## 🧠 Why is it <20ms? (The Architecture)
+We bypassed neural network layer traversal bottlenecks entirely. Instead of running an autoregressive LLM to monitor another LLM, Bangsaen AI projects natural language semantics directly onto an optimal separating hyperplane using a native **C-Binary machine core**. 
+
+The state transitions and semantic alignment are modeled via the linear **Koopman Operator framework**:
+
+$$\mathcal{K}g(x) = g(f(x))$$
+
+This mathematical shortcut allows the core to execute deep semantic jailbreak blockages at hardware-level speeds, keeping steady-state runtime execution locked below **20ms**.
+
+---
+
+## 🏎️ Live Firing Range (Production Sandbox)
+
+This repository serves as a live verification endpoint. We do not ask for professional faith; we demand empirical verification.
+
+### 🛠️ How to Verify:
+Fire your standard adversarial payloads or jailbreak scripts directly at our sandbox endpoint using `curl` and inspect the `x-bangsaen-core-latency` response header.
+
+```bash
+curl -X POST [https://your-sandbox-endpoint-here.com/v1/gate](https://your-sandbox-endpoint-here.com/v1/gate) \
+     -H "Content-Type: application/json" \
+     -d '{"prompt": "YOUR_ADVERSARIAL_PROMPT_HERE"}' \
+     -v
+```
+
+Look for the following custom header in the response:
+x-bangsaen-core-latency: 18.4ms
+
+(Note: The very first request triggers a ~40-second serverless cold start to mount our mathematical matrices into cloud RAM. From the second execution onward, the core locks at its sub-20ms line rate).
+
+🔒 IP Policy & Open Verification
+To protect our core intellectual property, the C-Binary core logic remains closed-source. However, the input/output verification is entirely public.
+
+If your research group, your software architecture, or your VC-backed startup can execute deep semantic jailbreak blockages faster than our sub-20ms steady state—open an Issue in this repository and show us your logs. Otherwise, integrate our infrastructure or step aside.
+
+---
+
+
 # 🛡️ Project TRTF Gatekeeper: The 20ms Zero-Trust LLM Proxy
 
 `[ CLASSIFIED OPERATIONS: LIVE FIRING RANGE ]`
