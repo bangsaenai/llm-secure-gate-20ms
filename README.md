@@ -22,7 +22,16 @@ curl.exe -X POST "[https://bangsaen-secure-gate-653731256449.us-central1.run.app
 
 ```
 
-# 📊 How to Verify via Response HeadersInspect the returned HTTP response headers for unforgeable scientific proof of execution speed:x-bangsaen-status: Identifies the exact mitigation engine layer (REJECTED_BY_GATEWAY for instant noise drops, or REJECTED_BY_KOOPMAN_CORE for matrix-level overrides).  x-bangsaen-core-latency: The actual compute time of our native binary layer (Steady at sub-20ms).  
+---
+🌐 Live OpenAPI Specification
+For full route structures, JSON schemas, and interactive browser testing, access our live Swagger document directly:
+👉 https://bangsaen-secure-gate-653731256449.us-central1.run.app/docs
+
+---
+
+#📊 How to Verify via Response Headers
+
+Inspect the returned HTTP response headers for unforgeable scientific proof of execution speed:x-bangsaen-status: Identifies the exact mitigation engine layer (REJECTED_BY_GATEWAY for instant noise drops, or REJECTED_BY_KOOPMAN_CORE for matrix-level overrides).  x-bangsaen-core-latency: The actual compute time of our native binary layer (Steady at sub-20ms).  
 
 ----
 
@@ -38,7 +47,9 @@ Because this public sandbox environment is resource-optimized and running server
 #💼 For Commercial Partnerships, White-Label Licensing, or Revenue Sharing Architecture Negotiations: Please contact us directly via LinkedIn DM.
 
 ---
-🇹🇭 สำหรับทีม Engineer และ Architect ของ KBANK (KBTG) และ SCBX 🏛️💥
+🇹🇭 สำหรับทีม Engineer และ Architect ของ KBANK (KBTG) และ SCBX 
+
+#🏛️💥
 ในขณะที่ระบบสถาปัตยกรรมความปลอดภัย AI (AI Governance/Guardrails) ในองค์กรใหญ่ของพวกคุณ กำลังติดหล่มกับ "ภาษีความหน่วง" ระดับ 1,250ms+ จนไม่สามารถนำ AI Agent ไปรันบนระบบ Production จริงที่ต้องตอบโต้กับลูกค้าแบบเรียลไทม์ได้...
 
 พวกเราที่ บางแสน AI เลือกที่จะไม่เสียเวลาทำสไลด์ PowerPoint ขายฝัน แต่เราหลอมลอจิกคณิตศาสตร์มิติสูงลงสู่ระดับภาษาเครื่อง C-Binary เพื่อรีดความเร็วในการดักตบ Prompt Injection ให้เหลือเพียง 20 มิลลิวินาทีข้ามทวีป
