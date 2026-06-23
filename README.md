@@ -1,3 +1,26 @@
+# 🛡️ LLM Secure Gate: The Bangsaen Filter
+
+> **⚠️ CRITICAL ARCHITECTURAL WARNING [June 2026]**
+> OpenAI has officially open-sourced the **Agents SDK** (evolved from Swarm). While the industry celebrates autonomous multi-agent handoffs and instant Python tool executions, enterprise system architects are facing an unprecedented cybersecurity nightmare. 
+> 
+> **If you deploy OpenAI's Multi-Agent system without a deterministic perimeter filter, your architecture is inherently vulnerable.** Here is why you need the **Bangsaen Filter** plugged in at your front gate *before*ทราฟฟิกจะหลุดเข้าเครือข่าย Agent
+
+---
+
+### 🚨 The Multi-Agent Cascading Vulnerability Vector
+
+1. **The Domino Handoff Attack:** The Agents SDK allows agents to automatically hand off execution control to other agents. If an adversarial prompt or an "alien language" jailbreak vector bypasses your initial layer, **the compromise cascades autonomously**. Agent A gets infected, inherits full context, and hands off the malicious payload to Agent B and C with elevated system privileges—completely bypassing human intervention.
+2. **The "Python-Function-as-a-Tool" RCE Trap:** Turning plain Python functions into instant agent tools means you are granting autonomous loops direct code execution rights. A single successful Prompt Injection payload slipping past the gate can manipulate an agent into invoking internal tools to drop databases, leak API keys, or execute unauthorized financial transactions.
+3. **The Autoregressive Latency Tax Paralysis:** Traditional guardrails rely on stochastic models (LLM-as-a-Judge) like Llama Guard to inspect inputs. If every single inter-agent handoff or streaming sequence requires a secondary LLM validation loop, your architecture faces a catastrophic **500ms+ Latency Tax per hop**. To maintain real-time performance, developers will inevitably *disable* these heavy guardrails, leaving the enterprise completely exposed.
+
+---
+
+### 🛡️ Enter the Bangsaen Filter: Linear Perimeter Defense
+
+The **Bangsaen Filter** acts as an autonomous, agentic gatekeeper sitting at the strict perimeter of your system. It intercepts, evaluates, and neutralizes malicious character sequences **before** they hit the OpenAI SDK runtime orchestration loop.
+
+---
+
 # ⚡ Bangsaen AI: The 20ms Semantic Firewall Challenge
 
 An immutable, deterministic sub-20ms semantic security gateway engineered to replace traditional stochastic LLM guardrails (LlamaGuard, Nvidia NeMo, or heavy middleware proxies) which inflict a devastating 200ms to 1,250ms+ latency tax on production loops.
