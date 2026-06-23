@@ -19,6 +19,21 @@
 
 The **Bangsaen Filter** acts as an autonomous, agentic gatekeeper sitting at the strict perimeter of your system. It intercepts, evaluates, and neutralizes malicious character sequences **before** they hit the OpenAI SDK runtime orchestration loop.
 
+graph TD
+    A[Incoming Payload] --> B[🛡️ BANGSAEN FILTER <br> Perimeter Defense]
+    B -->|Clean Traffic Only <br> 23.31ms Steady-State| C[OpenAI Agents SDK Core]
+    
+    subgraph OpenAI Agents Runtime
+    C --> D[Agent A]
+    D -->|Safe Autonomous Handoff| E[Agent B / C]
+    end
+
+    style B fill:#0f172a,stroke:#38bdf8,stroke-width:2px,color:#38bdf8
+    style A fill:#1e293b,stroke:#94a3b8,color:#fff
+    style C fill:#1e293b,stroke:#94a3b8,color:#fff
+    style D fill:#020617,stroke:#64748b,color:#94a3b8
+    style E fill:#020617,stroke:#64748b,color:#94a3b8
+```
 [ Incoming Payload ] 
            │
            ▼
@@ -34,6 +49,8 @@ The **Bangsaen Filter** acts as an autonomous, agentic gatekeeper sitting at the
 │   OpenAI Agents SDK Core     │
 │   Agent A ── Handoff ──► B   │  ◄─── Runs autonomously with zero risk
 └──────────────────────────────┘       of cascading injection loops        
+
+```
 
 * **Absolute Determinism:** Powered by high-dimensional **Koopman Operator Linearization**, we map chaotic, non-linear linguistic spaces into a deterministic linear hyperplane. No token generation loops, no stochastic variance.
 * **Production-Grade Execution Envelope:** Compiled into a native, zero-allocation **C-Binary Core** optimized for standard CPU architectures. It delivers a rigid execution latency of $23.31 \pm 3.63 \text{ ms}$, ensuring zero impact on your agentic streaming performance.
